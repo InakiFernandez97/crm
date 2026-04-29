@@ -1,0 +1,190 @@
+# ============================================================================
+# CRM/ERP - .gitignore
+# Archivo de seguridad para evitar versionar archivos sensibles
+# ============================================================================
+
+# ============================================================================
+# CONFIGURACIÓN SENSIBLE - NUNCA VERSIONAR
+# ============================================================================
+
+# Archivos de configuración con credenciales
+app/Config/Database.php
+app/Config/App.php
+app/Config/Email.php
+
+# Archivos de entorno
+.env
+.env.local
+.env.*.local
+
+# ============================================================================
+# DIRECTORIOS GENERADOS Y TEMPORALES
+# ============================================================================
+
+# Caché
+writable/cache/*
+!writable/cache/.gitkeep
+
+# Logs
+writable/logs/*
+!writable/logs/.gitkeep
+
+# Sesiones
+writable/session/*
+!writable/session/.gitkeep
+
+# Uploads de usuarios
+writable/uploads/*
+!writable/uploads/.gitkeep
+
+# Directorio debugbar
+writable/debugbar/*
+!writable/debugbar/.gitkeep
+
+# Archivos temporales
+files/temp/*
+!files/temp/.gitkeep
+
+# ============================================================================
+# ARCHIVOS DE USUARIO Y SISTEMA
+# ============================================================================
+
+# Imágenes de perfil
+files/profile_images/*
+!files/profile_images/.gitkeep
+
+# Archivos de proyecto
+files/project_files/*
+!files/project_files/.gitkeep
+
+# Timeline files
+files/timeline_files/*
+!files/timeline_files/.gitkeep
+
+# Archivos generales
+files/general/*
+!files/general/.gitkeep
+
+# ============================================================================
+# IDE Y HERRAMIENTAS DE DESARROLLO
+# ============================================================================
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# PHPStorm / IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# NetBeans
+nbproject/
+.nbjump.properties
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+.vim/
+*.swp
+*.swo
+*~
+.vimrc
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ============================================================================
+# SISTEMA OPERATIVO
+# ============================================================================
+
+# Windows
+Thumbs.db
+Desktop.ini
+*.lnk
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+.directory
+.Trash-*
+
+# ============================================================================
+# GESTORES DE DEPENDENCIAS
+# ============================================================================
+
+# Composer
+/vendor/
+composer.lock
+
+# NPM / Node.js (si se usa)
+node_modules/
+package-lock.json
+yarn.lock
+npm-debug.log*
+yarn-debug.log*
+
+# ============================================================================
+# ARCHIVOS COMPILADOS Y BUILDS
+# ============================================================================
+
+*.pyc
+*.pyo
+*.pyd
+.Python
+__pycache__/
+
+# ============================================================================
+# BACKUPS Y RESPALDOS
+# ============================================================================
+
+*.bak
+*.backup
+*.tmp
+*.temp
+backup_*.sql
+*.sql.gz
+
+# ============================================================================
+# ARCHIVOS ESPECÍFICOS A IGNORAR
+# ============================================================================
+
+# Archivos del instalador (después de instalar)
+install/database.sql.bak
+install/*.log
+
+# Copias de seguridad de base de datos
+*.sql.backup
+*.sql.old
+
+# Tokens y credenciales accidentales
+*.key
+*.pem
+*.cert
+
+# ============================================================================
+# PATRONES ADICIONALES DE SEGURIDAD
+# ============================================================================
+
+# No versionar archivos con credenciales
+*credentials*
+*secret*
+*password*
+*token*
+.env*
+
+# Excepciones para archivos de plantilla
+!.env.example
+!.gitkeep
