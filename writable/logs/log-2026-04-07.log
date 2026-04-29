@@ -1,0 +1,494 @@
+ERROR - 2026-04-07 19:21:47 --> Error connecting to the database: mysqli_sql_exception: Plugin 'mysql_native_password' is not loaded in C:\laragon\www\crm\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\laragon\www\crm\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'nplanet_coke', Object(SensitiveParameterValue), 'nplanet_crm', 3306, '', 0)
+#1 C:\laragon\www\crm\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\crm\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\crm\app\Models\Crud_model.php(28): CodeIgniter\Database\BaseConnection->query('SET sql_mode = ...')
+#4 C:\laragon\www\crm\app\Models\Settings_model.php(11): App\Models\Crud_model->__construct('settings')
+#5 C:\laragon\www\crm\system\Config\Factories.php(113): App\Models\Settings_model->__construct(NULL)
+#6 C:\laragon\www\crm\system\Common.php(825): CodeIgniter\Config\Factories::__callStatic('models', Array)
+#7 C:\laragon\www\crm\app\Controllers\App_Controller.php(99): model('App\\Models\\Sett...')
+#8 C:\laragon\www\crm\app\Controllers\Security_Controller.php(17): App\Controllers\App_Controller->__construct()
+#9 C:\laragon\www\crm\app\Controllers\Dashboard.php(11): App\Controllers\Security_Controller->__construct()
+#10 C:\laragon\www\crm\system\CodeIgniter.php(904): App\Controllers\Dashboard->__construct()
+#11 C:\laragon\www\crm\system\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+#12 C:\laragon\www\crm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\laragon\www\crm\index.php(80): CodeIgniter\CodeIgniter->run()
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Plugin 'mysql_native_password' is not loaded in C:\laragon\www\crm\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\laragon\www\crm\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\crm\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\crm\app\Models\Crud_model.php(28): CodeIgniter\Database\BaseConnection->query('SET sql_mode = ...')
+#3 C:\laragon\www\crm\app\Models\Settings_model.php(11): App\Models\Crud_model->__construct('settings')
+#4 C:\laragon\www\crm\system\Config\Factories.php(113): App\Models\Settings_model->__construct(NULL)
+#5 C:\laragon\www\crm\system\Common.php(825): CodeIgniter\Config\Factories::__callStatic('models', Array)
+#6 C:\laragon\www\crm\app\Controllers\App_Controller.php(99): model('App\\Models\\Sett...')
+#7 C:\laragon\www\crm\app\Controllers\Security_Controller.php(17): App\Controllers\App_Controller->__construct()
+#8 C:\laragon\www\crm\app\Controllers\Dashboard.php(11): App\Controllers\Security_Controller->__construct()
+#9 C:\laragon\www\crm\system\CodeIgniter.php(904): App\Controllers\Dashboard->__construct()
+#10 C:\laragon\www\crm\system\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+#11 C:\laragon\www\crm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\crm\index.php(80): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2026-04-07 19:21:47 --> Unable to connect to the database.
+Main connection [MySQLi]: Plugin 'mysql_native_password' is not loaded
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Crud_model.php(28): CodeIgniter\Database\BaseConnection->query('SET sql_mode = \'\'')
+ 3 APPPATH\Models\Settings_model.php(11): App\Models\Crud_model->__construct('settings')
+ 4 SYSTEMPATH\Config\Factories.php(113): App\Models\Settings_model->__construct(null)
+ 5 SYSTEMPATH\Common.php(825): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 6 APPPATH\Controllers\App_Controller.php(99): model('App\\Models\\Settings_model')
+ 7 APPPATH\Controllers\Security_Controller.php(17): App\Controllers\App_Controller->__construct()
+ 8 APPPATH\Controllers\Dashboard.php(11): App\Controllers\Security_Controller->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Dashboard->__construct()
+10 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-04-07 19:25:10 --> Error connecting to the database: mysqli_sql_exception: Plugin 'mysql_native_password' is not loaded in C:\laragon\www\crm\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\laragon\www\crm\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'nplanet_coke', Object(SensitiveParameterValue), 'nplanet_crm', 3306, '', 0)
+#1 C:\laragon\www\crm\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\crm\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\crm\app\Models\Crud_model.php(28): CodeIgniter\Database\BaseConnection->query('SET sql_mode = ...')
+#4 C:\laragon\www\crm\app\Models\Settings_model.php(11): App\Models\Crud_model->__construct('settings')
+#5 C:\laragon\www\crm\system\Config\Factories.php(113): App\Models\Settings_model->__construct(NULL)
+#6 C:\laragon\www\crm\system\Common.php(825): CodeIgniter\Config\Factories::__callStatic('models', Array)
+#7 C:\laragon\www\crm\app\Controllers\App_Controller.php(99): model('App\\Models\\Sett...')
+#8 C:\laragon\www\crm\app\Controllers\Security_Controller.php(17): App\Controllers\App_Controller->__construct()
+#9 C:\laragon\www\crm\app\Controllers\Dashboard.php(11): App\Controllers\Security_Controller->__construct()
+#10 C:\laragon\www\crm\system\CodeIgniter.php(904): App\Controllers\Dashboard->__construct()
+#11 C:\laragon\www\crm\system\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+#12 C:\laragon\www\crm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\laragon\www\crm\index.php(80): CodeIgniter\CodeIgniter->run()
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Plugin 'mysql_native_password' is not loaded in C:\laragon\www\crm\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\laragon\www\crm\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\crm\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\crm\app\Models\Crud_model.php(28): CodeIgniter\Database\BaseConnection->query('SET sql_mode = ...')
+#3 C:\laragon\www\crm\app\Models\Settings_model.php(11): App\Models\Crud_model->__construct('settings')
+#4 C:\laragon\www\crm\system\Config\Factories.php(113): App\Models\Settings_model->__construct(NULL)
+#5 C:\laragon\www\crm\system\Common.php(825): CodeIgniter\Config\Factories::__callStatic('models', Array)
+#6 C:\laragon\www\crm\app\Controllers\App_Controller.php(99): model('App\\Models\\Sett...')
+#7 C:\laragon\www\crm\app\Controllers\Security_Controller.php(17): App\Controllers\App_Controller->__construct()
+#8 C:\laragon\www\crm\app\Controllers\Dashboard.php(11): App\Controllers\Security_Controller->__construct()
+#9 C:\laragon\www\crm\system\CodeIgniter.php(904): App\Controllers\Dashboard->__construct()
+#10 C:\laragon\www\crm\system\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+#11 C:\laragon\www\crm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\crm\index.php(80): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2026-04-07 19:25:10 --> Unable to connect to the database.
+Main connection [MySQLi]: Plugin 'mysql_native_password' is not loaded
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Crud_model.php(28): CodeIgniter\Database\BaseConnection->query('SET sql_mode = \'\'')
+ 3 APPPATH\Models\Settings_model.php(11): App\Models\Crud_model->__construct('settings')
+ 4 SYSTEMPATH\Config\Factories.php(113): App\Models\Settings_model->__construct(null)
+ 5 SYSTEMPATH\Common.php(825): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 6 APPPATH\Controllers\App_Controller.php(99): model('App\\Models\\Settings_model')
+ 7 APPPATH\Controllers\Security_Controller.php(17): App\Controllers\App_Controller->__construct()
+ 8 APPPATH\Controllers\Dashboard.php(11): App\Controllers\Security_Controller->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Dashboard->__construct()
+10 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-04-07 19:25:41 --> Error connecting to the database: mysqli_sql_exception: Plugin 'mysql_native_password' is not loaded in C:\laragon\www\crm\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\laragon\www\crm\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'nplanet_coke', Object(SensitiveParameterValue), 'nplanet_crm', 3306, '', 0)
+#1 C:\laragon\www\crm\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\crm\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\crm\app\Models\Crud_model.php(28): CodeIgniter\Database\BaseConnection->query('SET sql_mode = ...')
+#4 C:\laragon\www\crm\app\Models\Settings_model.php(11): App\Models\Crud_model->__construct('settings')
+#5 C:\laragon\www\crm\system\Config\Factories.php(113): App\Models\Settings_model->__construct(NULL)
+#6 C:\laragon\www\crm\system\Common.php(825): CodeIgniter\Config\Factories::__callStatic('models', Array)
+#7 C:\laragon\www\crm\app\Controllers\App_Controller.php(99): model('App\\Models\\Sett...')
+#8 C:\laragon\www\crm\app\Controllers\Security_Controller.php(17): App\Controllers\App_Controller->__construct()
+#9 C:\laragon\www\crm\app\Controllers\Dashboard.php(11): App\Controllers\Security_Controller->__construct()
+#10 C:\laragon\www\crm\system\CodeIgniter.php(904): App\Controllers\Dashboard->__construct()
+#11 C:\laragon\www\crm\system\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+#12 C:\laragon\www\crm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\laragon\www\crm\index.php(80): CodeIgniter\CodeIgniter->run()
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Plugin 'mysql_native_password' is not loaded in C:\laragon\www\crm\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\laragon\www\crm\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\crm\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\crm\app\Models\Crud_model.php(28): CodeIgniter\Database\BaseConnection->query('SET sql_mode = ...')
+#3 C:\laragon\www\crm\app\Models\Settings_model.php(11): App\Models\Crud_model->__construct('settings')
+#4 C:\laragon\www\crm\system\Config\Factories.php(113): App\Models\Settings_model->__construct(NULL)
+#5 C:\laragon\www\crm\system\Common.php(825): CodeIgniter\Config\Factories::__callStatic('models', Array)
+#6 C:\laragon\www\crm\app\Controllers\App_Controller.php(99): model('App\\Models\\Sett...')
+#7 C:\laragon\www\crm\app\Controllers\Security_Controller.php(17): App\Controllers\App_Controller->__construct()
+#8 C:\laragon\www\crm\app\Controllers\Dashboard.php(11): App\Controllers\Security_Controller->__construct()
+#9 C:\laragon\www\crm\system\CodeIgniter.php(904): App\Controllers\Dashboard->__construct()
+#10 C:\laragon\www\crm\system\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+#11 C:\laragon\www\crm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\crm\index.php(80): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2026-04-07 19:25:41 --> Unable to connect to the database.
+Main connection [MySQLi]: Plugin 'mysql_native_password' is not loaded
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Crud_model.php(28): CodeIgniter\Database\BaseConnection->query('SET sql_mode = \'\'')
+ 3 APPPATH\Models\Settings_model.php(11): App\Models\Crud_model->__construct('settings')
+ 4 SYSTEMPATH\Config\Factories.php(113): App\Models\Settings_model->__construct(null)
+ 5 SYSTEMPATH\Common.php(825): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 6 APPPATH\Controllers\App_Controller.php(99): model('App\\Models\\Settings_model')
+ 7 APPPATH\Controllers\Security_Controller.php(17): App\Controllers\App_Controller->__construct()
+ 8 APPPATH\Controllers\Dashboard.php(11): App\Controllers\Security_Controller->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Dashboard->__construct()
+10 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-04-07 19:27:58 --> Error connecting to the database: mysqli_sql_exception: Plugin 'mysql_native_password' is not loaded in C:\laragon\www\crm\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\laragon\www\crm\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'nplanet_coke', Object(SensitiveParameterValue), 'nplanet_crm', 3306, '', 0)
+#1 C:\laragon\www\crm\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\crm\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\crm\app\Models\Crud_model.php(28): CodeIgniter\Database\BaseConnection->query('SET sql_mode = ...')
+#4 C:\laragon\www\crm\app\Models\Settings_model.php(11): App\Models\Crud_model->__construct('settings')
+#5 C:\laragon\www\crm\system\Config\Factories.php(113): App\Models\Settings_model->__construct(NULL)
+#6 C:\laragon\www\crm\system\Common.php(825): CodeIgniter\Config\Factories::__callStatic('models', Array)
+#7 C:\laragon\www\crm\app\Controllers\App_Controller.php(99): model('App\\Models\\Sett...')
+#8 C:\laragon\www\crm\app\Controllers\Security_Controller.php(17): App\Controllers\App_Controller->__construct()
+#9 C:\laragon\www\crm\app\Controllers\Dashboard.php(11): App\Controllers\Security_Controller->__construct()
+#10 C:\laragon\www\crm\system\CodeIgniter.php(904): App\Controllers\Dashboard->__construct()
+#11 C:\laragon\www\crm\system\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+#12 C:\laragon\www\crm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\laragon\www\crm\index.php(80): CodeIgniter\CodeIgniter->run()
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Plugin 'mysql_native_password' is not loaded in C:\laragon\www\crm\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\laragon\www\crm\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\crm\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\crm\app\Models\Crud_model.php(28): CodeIgniter\Database\BaseConnection->query('SET sql_mode = ...')
+#3 C:\laragon\www\crm\app\Models\Settings_model.php(11): App\Models\Crud_model->__construct('settings')
+#4 C:\laragon\www\crm\system\Config\Factories.php(113): App\Models\Settings_model->__construct(NULL)
+#5 C:\laragon\www\crm\system\Common.php(825): CodeIgniter\Config\Factories::__callStatic('models', Array)
+#6 C:\laragon\www\crm\app\Controllers\App_Controller.php(99): model('App\\Models\\Sett...')
+#7 C:\laragon\www\crm\app\Controllers\Security_Controller.php(17): App\Controllers\App_Controller->__construct()
+#8 C:\laragon\www\crm\app\Controllers\Dashboard.php(11): App\Controllers\Security_Controller->__construct()
+#9 C:\laragon\www\crm\system\CodeIgniter.php(904): App\Controllers\Dashboard->__construct()
+#10 C:\laragon\www\crm\system\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+#11 C:\laragon\www\crm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\crm\index.php(80): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2026-04-07 19:27:58 --> Unable to connect to the database.
+Main connection [MySQLi]: Plugin 'mysql_native_password' is not loaded
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Crud_model.php(28): CodeIgniter\Database\BaseConnection->query('SET sql_mode = \'\'')
+ 3 APPPATH\Models\Settings_model.php(11): App\Models\Crud_model->__construct('settings')
+ 4 SYSTEMPATH\Config\Factories.php(113): App\Models\Settings_model->__construct(null)
+ 5 SYSTEMPATH\Common.php(825): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 6 APPPATH\Controllers\App_Controller.php(99): model('App\\Models\\Settings_model')
+ 7 APPPATH\Controllers\Security_Controller.php(17): App\Controllers\App_Controller->__construct()
+ 8 APPPATH\Controllers\Dashboard.php(11): App\Controllers\Security_Controller->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Dashboard->__construct()
+10 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-04-07 19:41:20 --> Error connecting to the database: mysqli_sql_exception: Plugin 'mysql_native_password' is not loaded in C:\laragon\www\crm\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\laragon\www\crm\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'nplanet_coke', Object(SensitiveParameterValue), 'nplanet_crm', 3306, '', 0)
+#1 C:\laragon\www\crm\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\crm\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\crm\app\Models\Crud_model.php(28): CodeIgniter\Database\BaseConnection->query('SET sql_mode = ...')
+#4 C:\laragon\www\crm\app\Models\Settings_model.php(11): App\Models\Crud_model->__construct('settings')
+#5 C:\laragon\www\crm\system\Config\Factories.php(113): App\Models\Settings_model->__construct(NULL)
+#6 C:\laragon\www\crm\system\Common.php(825): CodeIgniter\Config\Factories::__callStatic('models', Array)
+#7 C:\laragon\www\crm\app\Controllers\App_Controller.php(99): model('App\\Models\\Sett...')
+#8 C:\laragon\www\crm\app\Controllers\Security_Controller.php(17): App\Controllers\App_Controller->__construct()
+#9 C:\laragon\www\crm\app\Controllers\Dashboard.php(11): App\Controllers\Security_Controller->__construct()
+#10 C:\laragon\www\crm\system\CodeIgniter.php(904): App\Controllers\Dashboard->__construct()
+#11 C:\laragon\www\crm\system\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+#12 C:\laragon\www\crm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\laragon\www\crm\index.php(80): CodeIgniter\CodeIgniter->run()
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Plugin 'mysql_native_password' is not loaded in C:\laragon\www\crm\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\laragon\www\crm\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\crm\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\crm\app\Models\Crud_model.php(28): CodeIgniter\Database\BaseConnection->query('SET sql_mode = ...')
+#3 C:\laragon\www\crm\app\Models\Settings_model.php(11): App\Models\Crud_model->__construct('settings')
+#4 C:\laragon\www\crm\system\Config\Factories.php(113): App\Models\Settings_model->__construct(NULL)
+#5 C:\laragon\www\crm\system\Common.php(825): CodeIgniter\Config\Factories::__callStatic('models', Array)
+#6 C:\laragon\www\crm\app\Controllers\App_Controller.php(99): model('App\\Models\\Sett...')
+#7 C:\laragon\www\crm\app\Controllers\Security_Controller.php(17): App\Controllers\App_Controller->__construct()
+#8 C:\laragon\www\crm\app\Controllers\Dashboard.php(11): App\Controllers\Security_Controller->__construct()
+#9 C:\laragon\www\crm\system\CodeIgniter.php(904): App\Controllers\Dashboard->__construct()
+#10 C:\laragon\www\crm\system\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+#11 C:\laragon\www\crm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\crm\index.php(80): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2026-04-07 19:41:20 --> Unable to connect to the database.
+Main connection [MySQLi]: Plugin 'mysql_native_password' is not loaded
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Crud_model.php(28): CodeIgniter\Database\BaseConnection->query('SET sql_mode = \'\'')
+ 3 APPPATH\Models\Settings_model.php(11): App\Models\Crud_model->__construct('settings')
+ 4 SYSTEMPATH\Config\Factories.php(113): App\Models\Settings_model->__construct(null)
+ 5 SYSTEMPATH\Common.php(825): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 6 APPPATH\Controllers\App_Controller.php(99): model('App\\Models\\Settings_model')
+ 7 APPPATH\Controllers\Security_Controller.php(17): App\Controllers\App_Controller->__construct()
+ 8 APPPATH\Controllers\Dashboard.php(11): App\Controllers\Security_Controller->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Dashboard->__construct()
+10 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-04-07 19:46:55 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'nplanet_coke'@'localhost' (using password: YES) in C:\laragon\www\crm\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\laragon\www\crm\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'nplanet_coke', Object(SensitiveParameterValue), 'nplanet_crm', 3306, '', 0)
+#1 C:\laragon\www\crm\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\crm\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\crm\app\Models\Crud_model.php(28): CodeIgniter\Database\BaseConnection->query('SET sql_mode = ...')
+#4 C:\laragon\www\crm\app\Models\Settings_model.php(11): App\Models\Crud_model->__construct('settings')
+#5 C:\laragon\www\crm\system\Config\Factories.php(113): App\Models\Settings_model->__construct(NULL)
+#6 C:\laragon\www\crm\system\Common.php(825): CodeIgniter\Config\Factories::__callStatic('models', Array)
+#7 C:\laragon\www\crm\app\Controllers\App_Controller.php(99): model('App\\Models\\Sett...')
+#8 C:\laragon\www\crm\app\Controllers\Security_Controller.php(17): App\Controllers\App_Controller->__construct()
+#9 C:\laragon\www\crm\app\Controllers\Dashboard.php(11): App\Controllers\Security_Controller->__construct()
+#10 C:\laragon\www\crm\system\CodeIgniter.php(904): App\Controllers\Dashboard->__construct()
+#11 C:\laragon\www\crm\system\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+#12 C:\laragon\www\crm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\laragon\www\crm\index.php(80): CodeIgniter\CodeIgniter->run()
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\laragon\www\crm\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\laragon\www\crm\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\crm\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\crm\app\Models\Crud_model.php(28): CodeIgniter\Database\BaseConnection->query('SET sql_mode = ...')
+#3 C:\laragon\www\crm\app\Models\Settings_model.php(11): App\Models\Crud_model->__construct('settings')
+#4 C:\laragon\www\crm\system\Config\Factories.php(113): App\Models\Settings_model->__construct(NULL)
+#5 C:\laragon\www\crm\system\Common.php(825): CodeIgniter\Config\Factories::__callStatic('models', Array)
+#6 C:\laragon\www\crm\app\Controllers\App_Controller.php(99): model('App\\Models\\Sett...')
+#7 C:\laragon\www\crm\app\Controllers\Security_Controller.php(17): App\Controllers\App_Controller->__construct()
+#8 C:\laragon\www\crm\app\Controllers\Dashboard.php(11): App\Controllers\Security_Controller->__construct()
+#9 C:\laragon\www\crm\system\CodeIgniter.php(904): App\Controllers\Dashboard->__construct()
+#10 C:\laragon\www\crm\system\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+#11 C:\laragon\www\crm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\crm\index.php(80): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2026-04-07 19:46:55 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Crud_model.php(28): CodeIgniter\Database\BaseConnection->query('SET sql_mode = \'\'')
+ 3 APPPATH\Models\Settings_model.php(11): App\Models\Crud_model->__construct('settings')
+ 4 SYSTEMPATH\Config\Factories.php(113): App\Models\Settings_model->__construct(null)
+ 5 SYSTEMPATH\Common.php(825): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 6 APPPATH\Controllers\App_Controller.php(99): model('App\\Models\\Settings_model')
+ 7 APPPATH\Controllers\Security_Controller.php(17): App\Controllers\App_Controller->__construct()
+ 8 APPPATH\Controllers\Dashboard.php(11): App\Controllers\Security_Controller->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Dashboard->__construct()
+10 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-04-07 21:00:04 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'nplanet_coke'@'localhost' (using password: YES) in C:\laragon\www\crm\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\laragon\www\crm\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'nplanet_coke', Object(SensitiveParameterValue), 'nplanet_crm', 3306, '', 0)
+#1 C:\laragon\www\crm\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\crm\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\crm\app\Models\Crud_model.php(28): CodeIgniter\Database\BaseConnection->query('SET sql_mode = ...')
+#4 C:\laragon\www\crm\app\Models\Settings_model.php(11): App\Models\Crud_model->__construct('settings')
+#5 C:\laragon\www\crm\system\Config\Factories.php(113): App\Models\Settings_model->__construct(NULL)
+#6 C:\laragon\www\crm\system\Common.php(825): CodeIgniter\Config\Factories::__callStatic('models', Array)
+#7 C:\laragon\www\crm\app\Controllers\App_Controller.php(99): model('App\\Models\\Sett...')
+#8 C:\laragon\www\crm\app\Controllers\Security_Controller.php(17): App\Controllers\App_Controller->__construct()
+#9 C:\laragon\www\crm\app\Controllers\Dashboard.php(11): App\Controllers\Security_Controller->__construct()
+#10 C:\laragon\www\crm\system\CodeIgniter.php(904): App\Controllers\Dashboard->__construct()
+#11 C:\laragon\www\crm\system\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+#12 C:\laragon\www\crm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\laragon\www\crm\index.php(80): CodeIgniter\CodeIgniter->run()
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\laragon\www\crm\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\laragon\www\crm\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\crm\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\crm\app\Models\Crud_model.php(28): CodeIgniter\Database\BaseConnection->query('SET sql_mode = ...')
+#3 C:\laragon\www\crm\app\Models\Settings_model.php(11): App\Models\Crud_model->__construct('settings')
+#4 C:\laragon\www\crm\system\Config\Factories.php(113): App\Models\Settings_model->__construct(NULL)
+#5 C:\laragon\www\crm\system\Common.php(825): CodeIgniter\Config\Factories::__callStatic('models', Array)
+#6 C:\laragon\www\crm\app\Controllers\App_Controller.php(99): model('App\\Models\\Sett...')
+#7 C:\laragon\www\crm\app\Controllers\Security_Controller.php(17): App\Controllers\App_Controller->__construct()
+#8 C:\laragon\www\crm\app\Controllers\Dashboard.php(11): App\Controllers\Security_Controller->__construct()
+#9 C:\laragon\www\crm\system\CodeIgniter.php(904): App\Controllers\Dashboard->__construct()
+#10 C:\laragon\www\crm\system\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+#11 C:\laragon\www\crm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\crm\index.php(80): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2026-04-07 21:00:04 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Crud_model.php(28): CodeIgniter\Database\BaseConnection->query('SET sql_mode = \'\'')
+ 3 APPPATH\Models\Settings_model.php(11): App\Models\Crud_model->__construct('settings')
+ 4 SYSTEMPATH\Config\Factories.php(113): App\Models\Settings_model->__construct(null)
+ 5 SYSTEMPATH\Common.php(825): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 6 APPPATH\Controllers\App_Controller.php(99): model('App\\Models\\Settings_model')
+ 7 APPPATH\Controllers\Security_Controller.php(17): App\Controllers\App_Controller->__construct()
+ 8 APPPATH\Controllers\Dashboard.php(11): App\Controllers\Security_Controller->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Dashboard->__construct()
+10 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-04-07 21:04:04 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'nplanet_coke'@'localhost' (using password: YES) in C:\laragon\www\crm\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\laragon\www\crm\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'nplanet_coke', Object(SensitiveParameterValue), 'nplanet_crm', 3306, '', 0)
+#1 C:\laragon\www\crm\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\crm\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\crm\app\Models\Crud_model.php(28): CodeIgniter\Database\BaseConnection->query('SET sql_mode = ...')
+#4 C:\laragon\www\crm\app\Models\Settings_model.php(11): App\Models\Crud_model->__construct('settings')
+#5 C:\laragon\www\crm\system\Config\Factories.php(113): App\Models\Settings_model->__construct(NULL)
+#6 C:\laragon\www\crm\system\Common.php(825): CodeIgniter\Config\Factories::__callStatic('models', Array)
+#7 C:\laragon\www\crm\app\Controllers\App_Controller.php(99): model('App\\Models\\Sett...')
+#8 C:\laragon\www\crm\app\Controllers\Security_Controller.php(17): App\Controllers\App_Controller->__construct()
+#9 C:\laragon\www\crm\app\Controllers\Dashboard.php(11): App\Controllers\Security_Controller->__construct()
+#10 C:\laragon\www\crm\system\CodeIgniter.php(904): App\Controllers\Dashboard->__construct()
+#11 C:\laragon\www\crm\system\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+#12 C:\laragon\www\crm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\laragon\www\crm\index.php(80): CodeIgniter\CodeIgniter->run()
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\laragon\www\crm\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\laragon\www\crm\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\crm\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\crm\app\Models\Crud_model.php(28): CodeIgniter\Database\BaseConnection->query('SET sql_mode = ...')
+#3 C:\laragon\www\crm\app\Models\Settings_model.php(11): App\Models\Crud_model->__construct('settings')
+#4 C:\laragon\www\crm\system\Config\Factories.php(113): App\Models\Settings_model->__construct(NULL)
+#5 C:\laragon\www\crm\system\Common.php(825): CodeIgniter\Config\Factories::__callStatic('models', Array)
+#6 C:\laragon\www\crm\app\Controllers\App_Controller.php(99): model('App\\Models\\Sett...')
+#7 C:\laragon\www\crm\app\Controllers\Security_Controller.php(17): App\Controllers\App_Controller->__construct()
+#8 C:\laragon\www\crm\app\Controllers\Dashboard.php(11): App\Controllers\Security_Controller->__construct()
+#9 C:\laragon\www\crm\system\CodeIgniter.php(904): App\Controllers\Dashboard->__construct()
+#10 C:\laragon\www\crm\system\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+#11 C:\laragon\www\crm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\crm\index.php(80): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2026-04-07 21:04:04 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Crud_model.php(28): CodeIgniter\Database\BaseConnection->query('SET sql_mode = \'\'')
+ 3 APPPATH\Models\Settings_model.php(11): App\Models\Crud_model->__construct('settings')
+ 4 SYSTEMPATH\Config\Factories.php(113): App\Models\Settings_model->__construct(null)
+ 5 SYSTEMPATH\Common.php(825): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 6 APPPATH\Controllers\App_Controller.php(99): model('App\\Models\\Settings_model')
+ 7 APPPATH\Controllers\Security_Controller.php(17): App\Controllers\App_Controller->__construct()
+ 8 APPPATH\Controllers\Dashboard.php(11): App\Controllers\Security_Controller->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Dashboard->__construct()
+10 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-04-07 21:04:33 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'nplanet_coke'@'localhost' (using password: YES) in C:\laragon\www\crm\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\laragon\www\crm\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'nplanet_coke', Object(SensitiveParameterValue), 'nplanet_crm', 3306, '', 0)
+#1 C:\laragon\www\crm\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\crm\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\crm\app\Models\Crud_model.php(28): CodeIgniter\Database\BaseConnection->query('SET sql_mode = ...')
+#4 C:\laragon\www\crm\app\Models\Settings_model.php(11): App\Models\Crud_model->__construct('settings')
+#5 C:\laragon\www\crm\system\Config\Factories.php(113): App\Models\Settings_model->__construct(NULL)
+#6 C:\laragon\www\crm\system\Common.php(825): CodeIgniter\Config\Factories::__callStatic('models', Array)
+#7 C:\laragon\www\crm\app\Controllers\App_Controller.php(99): model('App\\Models\\Sett...')
+#8 C:\laragon\www\crm\app\Controllers\Security_Controller.php(17): App\Controllers\App_Controller->__construct()
+#9 C:\laragon\www\crm\app\Controllers\Dashboard.php(11): App\Controllers\Security_Controller->__construct()
+#10 C:\laragon\www\crm\system\CodeIgniter.php(904): App\Controllers\Dashboard->__construct()
+#11 C:\laragon\www\crm\system\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+#12 C:\laragon\www\crm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\laragon\www\crm\index.php(80): CodeIgniter\CodeIgniter->run()
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\laragon\www\crm\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\laragon\www\crm\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\crm\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\crm\app\Models\Crud_model.php(28): CodeIgniter\Database\BaseConnection->query('SET sql_mode = ...')
+#3 C:\laragon\www\crm\app\Models\Settings_model.php(11): App\Models\Crud_model->__construct('settings')
+#4 C:\laragon\www\crm\system\Config\Factories.php(113): App\Models\Settings_model->__construct(NULL)
+#5 C:\laragon\www\crm\system\Common.php(825): CodeIgniter\Config\Factories::__callStatic('models', Array)
+#6 C:\laragon\www\crm\app\Controllers\App_Controller.php(99): model('App\\Models\\Sett...')
+#7 C:\laragon\www\crm\app\Controllers\Security_Controller.php(17): App\Controllers\App_Controller->__construct()
+#8 C:\laragon\www\crm\app\Controllers\Dashboard.php(11): App\Controllers\Security_Controller->__construct()
+#9 C:\laragon\www\crm\system\CodeIgniter.php(904): App\Controllers\Dashboard->__construct()
+#10 C:\laragon\www\crm\system\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+#11 C:\laragon\www\crm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\crm\index.php(80): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2026-04-07 21:04:33 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Crud_model.php(28): CodeIgniter\Database\BaseConnection->query('SET sql_mode = \'\'')
+ 3 APPPATH\Models\Settings_model.php(11): App\Models\Crud_model->__construct('settings')
+ 4 SYSTEMPATH\Config\Factories.php(113): App\Models\Settings_model->__construct(null)
+ 5 SYSTEMPATH\Common.php(825): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 6 APPPATH\Controllers\App_Controller.php(99): model('App\\Models\\Settings_model')
+ 7 APPPATH\Controllers\Security_Controller.php(17): App\Controllers\App_Controller->__construct()
+ 8 APPPATH\Controllers\Dashboard.php(11): App\Controllers\Security_Controller->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Dashboard->__construct()
+10 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-04-07 21:08:26 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'nplanet_coke'@'localhost' (using password: YES) in C:\laragon\www\crm\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\laragon\www\crm\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'nplanet_coke', Object(SensitiveParameterValue), 'nplanet_crm', 3306, '', 0)
+#1 C:\laragon\www\crm\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\crm\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\crm\app\Models\Crud_model.php(28): CodeIgniter\Database\BaseConnection->query('SET sql_mode = ...')
+#4 C:\laragon\www\crm\app\Models\Settings_model.php(11): App\Models\Crud_model->__construct('settings')
+#5 C:\laragon\www\crm\system\Config\Factories.php(113): App\Models\Settings_model->__construct(NULL)
+#6 C:\laragon\www\crm\system\Common.php(825): CodeIgniter\Config\Factories::__callStatic('models', Array)
+#7 C:\laragon\www\crm\app\Controllers\App_Controller.php(99): model('App\\Models\\Sett...')
+#8 C:\laragon\www\crm\app\Controllers\Security_Controller.php(17): App\Controllers\App_Controller->__construct()
+#9 C:\laragon\www\crm\app\Controllers\Dashboard.php(11): App\Controllers\Security_Controller->__construct()
+#10 C:\laragon\www\crm\system\CodeIgniter.php(904): App\Controllers\Dashboard->__construct()
+#11 C:\laragon\www\crm\system\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+#12 C:\laragon\www\crm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\laragon\www\crm\index.php(80): CodeIgniter\CodeIgniter->run()
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\laragon\www\crm\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\laragon\www\crm\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\crm\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\crm\app\Models\Crud_model.php(28): CodeIgniter\Database\BaseConnection->query('SET sql_mode = ...')
+#3 C:\laragon\www\crm\app\Models\Settings_model.php(11): App\Models\Crud_model->__construct('settings')
+#4 C:\laragon\www\crm\system\Config\Factories.php(113): App\Models\Settings_model->__construct(NULL)
+#5 C:\laragon\www\crm\system\Common.php(825): CodeIgniter\Config\Factories::__callStatic('models', Array)
+#6 C:\laragon\www\crm\app\Controllers\App_Controller.php(99): model('App\\Models\\Sett...')
+#7 C:\laragon\www\crm\app\Controllers\Security_Controller.php(17): App\Controllers\App_Controller->__construct()
+#8 C:\laragon\www\crm\app\Controllers\Dashboard.php(11): App\Controllers\Security_Controller->__construct()
+#9 C:\laragon\www\crm\system\CodeIgniter.php(904): App\Controllers\Dashboard->__construct()
+#10 C:\laragon\www\crm\system\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+#11 C:\laragon\www\crm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\crm\index.php(80): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2026-04-07 21:08:26 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Crud_model.php(28): CodeIgniter\Database\BaseConnection->query('SET sql_mode = \'\'')
+ 3 APPPATH\Models\Settings_model.php(11): App\Models\Crud_model->__construct('settings')
+ 4 SYSTEMPATH\Config\Factories.php(113): App\Models\Settings_model->__construct(null)
+ 5 SYSTEMPATH\Common.php(825): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 6 APPPATH\Controllers\App_Controller.php(99): model('App\\Models\\Settings_model')
+ 7 APPPATH\Controllers\Security_Controller.php(17): App\Controllers\App_Controller->__construct()
+ 8 APPPATH\Controllers\Dashboard.php(11): App\Controllers\Security_Controller->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Dashboard->__construct()
+10 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(80): CodeIgniter\CodeIgniter->run()
+INFO - 2026-04-07 21:09:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-04-07 21:09:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-04-07 21:18:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-04-07 21:18:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
