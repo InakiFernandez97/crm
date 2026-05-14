@@ -7,11 +7,6 @@
 # CONFIGURACIÓN SENSIBLE - NUNCA VERSIONAR
 # ============================================================================
 
-# Archivos de configuración con credenciales
-app/Config/Database.php
-app/Config/App.php
-app/Config/Email.php
-
 # Archivos de entorno
 .env
 .env.local

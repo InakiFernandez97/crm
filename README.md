@@ -16,3 +16,4 @@ Este archivo funciona como índice de la documentación del CRM/ERP.
 2. Clonar/descargar el proyecto en `C:\laragon\www\crm`
 3. Seguir pasos en **[Manual de Uso](MANUAL-USO.md#instalación-con-laragon)**
 4. Acceder a `http://crm.test`
+5. Para hosting manual en Ferozo, ver **[Despliegue Manual en Ferozo](DESPLIEGUE-FEROZO.md)**
