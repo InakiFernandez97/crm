@@ -163,6 +163,7 @@ install/*.log
 # Copias de seguridad de base de datos
 *.sql.backup
 *.sql.old
+nplanet_crm.sql
 
 # Tokens y credenciales accidentales
 *.key
